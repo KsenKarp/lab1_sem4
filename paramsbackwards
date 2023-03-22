@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $# -gt 0 ]
+then
+	for ((param_num = $#; param_num >= 1; param_num--))
+	do
+		echo "${!param_num}"
+	done
+else
+	echo "No parameters"
+fi
